@@ -1,0 +1,47 @@
+class MetarchyGame:
+    def __init__(self, num_players):
+        self.num_players = num_players
+        self.players = []
+        self.round = 1
+        self.max_rounds = self.calculate_max_rounds()
+
+    def calculate_max_rounds(self):
+        # Расчет максимального количества ходов в зависимости от количества игроков
+        # Вернуть соответствующее значение
+
+    def start_game(self):
+        # Инициализация игроков и игровых ресурсов
+
+    def phase1_event(self):
+        # Фаза 1 - Событие: случайное определение и разыгрывание карты события
+
+    def phase2_distribution(self):
+        # Фаза 2 - Распределение: Игроки размещают своих Акторов по Локациям
+
+    def phase3_actions(self):
+        # Фаза 3 - Действия: Игроки разыгрывают Карты Действий
+
+    def phase4_conflict(self):
+        # Фаза 4 - Конфликт: Разрешение конфликтов между Акторами в Локациях
+
+    def phase5_exchange(self):
+        # Фаза 5 - Обмен: Обмен ресурсами и приобретение карт действий
+
+    def check_winner(self):
+        # Проверка победителя в конце игры и объявление результатов
+
+# Пример использования
+if __name__ == "__main__":
+    num_players = 4
+    game = MetarchyGame(num_players)
+    game.start_game()
+
+    while game.round <= game.max_rounds:
+        game.phase1_event()
+        game.phase2_distribution()
+        game.phase3_actions()
+        game.phase4_conflict()
+        game.phase5_exchange()
+        game.round += 1
+
+    game.check_winner()
